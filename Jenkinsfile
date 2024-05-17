@@ -9,7 +9,6 @@ pipeline {
         }
         stage('Execute Bash Script') {
             steps {
-                sh 'chmod +x ./list_files.sh'
                 sh './list_files.sh'
             }
         }
